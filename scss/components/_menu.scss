@@ -11,7 +11,7 @@
     li {
         width: 10px;
         height: 10px;
-        background-color: $primary-dark-color;
+        background-color: $primary-dark;
         border-radius: 50%;
         margin-bottom: 30px;
         &:last-child {
@@ -19,7 +19,7 @@
         }
         &.active {
             background-color: transparent;
-            border: 2px solid $primary-dark-color;
+            border: 2px solid $primary-dark;
         }
         a {
             display: block;

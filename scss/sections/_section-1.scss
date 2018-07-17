@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .section-1 {
-    background-color: $paleYellow;
+    background-color: $primary-bg;
 }
 
 .section-1-top {
@@ -27,7 +27,7 @@
 }
 
 .logo path {
-    fill: $primary-dark-color !important;
+    fill: $primary-dark !important;
 }
 
 .address-wrapper {
@@ -38,7 +38,7 @@
     width: 100%;
 }
     .address {
-        color: $primary-dark-color;
+        color: $primary-dark;
         font-family: 'Domine', serif;
         font-size: 2.6rem;
         letter-spacing: 1px;
@@ -53,7 +53,6 @@
 
 .section-1-bottom-cell {
     height: 33.33%;
-    padding-bottom: .85rem;
     width: 100%;
 }
 

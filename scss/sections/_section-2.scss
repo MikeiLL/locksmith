@@ -1,15 +1,45 @@
 @charset "UTF-8";
 
 .section-2 {
-    background-color: #5cc2f1;
+    background-color: $primary-bg;
     .text {
         margin: 0;
         position: absolute;
-        top: 50%;
+        top: 10%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
-        color: #fff;
-        font-size: 2.5rem;
+        color: $primary-dark;
         white-space: nowrap;
     }
 }
+
+.services__title {
+    font-size: 4.5rem;
+}
+
+.services__list {
+    list-style-image: url('../images/checkmark.svg');
+    position: relative;
+    top: 17.5%;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%; 
+}
+
+    .services__list li {
+        color: $primary-dark;
+        font-family: 'Domine', serif;
+        font-size: 1.6rem;
+        margin-bottom: 1.25rem;
+    }
+
+
+@media (min-width: 768px) {
+    .services__list {
+        
+    }
+
+    .services__list li {
+
+    }
+}    

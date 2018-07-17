@@ -102,6 +102,7 @@ button, a {
 }
 
 /* CLARENDON ALT */
+/* font-family: 'Domine', serif; */
 @font-face {
   font-family: 'Artist-Modern';
   src: url("../fonts/Artist-Modern.ttf.woff") format("woff"), url("../fonts/Artist-Modern.ttf.svg#Artist-Modern") format("svg"), url("../fonts/Artist-Modern.ttf.eot"), url("../fonts/Artist-Modern.eot?#iefix") format("embedded-opentype");
@@ -395,7 +396,6 @@ h6 {
 
 .section-1-bottom-cell {
   height: 33.33%;
-  padding-bottom: .85rem;
   width: 100%;
 }
 
@@ -512,18 +512,37 @@ h6 {
 }
 
 .section-2 {
-  background-color: #5cc2f1;
+  background-color: #f5f4d6;
 }
 
 .section-2 .text {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  color: #fff;
-  font-size: 2.5rem;
+  color: #4b3213;
   white-space: nowrap;
+}
+
+.services__title {
+  font-size: 4.5rem;
+}
+
+.services__list {
+  list-style-image: url("../images/checkmark.svg");
+  position: relative;
+  top: 17.5%;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.services__list li {
+  color: #4b3213;
+  font-family: 'Domine', serif;
+  font-size: 1.6rem;
+  margin-bottom: 1.25rem;
 }
 
 .section-3 {
