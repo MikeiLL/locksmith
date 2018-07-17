@@ -53,11 +53,12 @@
 
 .section-1-bottom-cell {
     height: 33.33%;
+    padding-bottom: .85rem;
     width: 100%;
-    padding: .35%;
 }
 
-.section-1-bottom-cell-1 {
+.section-1-bottom-cell-1, 
+.section-1-bottom-cell-3 {
     background-color: $primary-red;
 }
 
@@ -74,19 +75,20 @@
     flex-flow: column;
     justify-content: flex-start;
     padding-top: 1rem;
+    text-align: center;
 }
 
-.bottom-cell-wrapper-1,
-.bottom-cell-wrapper-2 {
-    border-color: $white;
+.bottom-cell-wrapper {
+  border-color: $white;
 } 
 
+/*
 .bottom-cell-wrapper-2 {
     padding-bottom: .85rem;
-}
+} */
 
 .key-icon {
-    width: 150px;
+    width: 170px;
     height: auto;
     margin: 0 auto;
 }
@@ -94,7 +96,7 @@
 .general-lock-notice {
     color: $white;
     font-family: 'Domine', serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
     width: 70%;
 }
@@ -107,11 +109,8 @@
     color: $white;
     font-family: 'Artist-Modern', sans-serif;
     font-size: 4.5rem;
-    margin-top: -25px;
-
-    a {
-        color: $white;
-    }
+    
+    a { color: $white; }
 }
 
 .gunsmith-hand-link {
@@ -119,31 +118,21 @@
 }
 
 .gunsmith-hand {
-    width: 85px;
+    width: 55px;
+    margin-top: 1rem;
 }
 
-.div-wrapper {
-    color: #fff;
-    font-size: 1.2rem;    
-}
-
-.no-auto-wrapper {
-    border: 0px solid white;
-    width: 75%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: auto;
-    align-items: center;
+.no-car-icon {
+    display: block;
+    margin: 0 auto;
+    width: 75px;
 }
 
 .no-auto {
     color: $white;
     font-family: 'Domine';
     font-size: 1.8rem;
-}
-
-.no-car-icon {
-    width: 60px;
+    display: block;
 }
 
 @media (min-width: 768px) {
@@ -167,6 +156,14 @@
 
     .section-1-bottom-cell {
         height: 100%;
-        width: 50%;
-    }     
+    }
+
+    .section-1-bottom-cell-1,
+    .section-1-bottom-cell-3 {
+        width: 40%;
+    }
+    .section-1-bottom-cell-2 {
+        width: 20%;
+    }
+
 }
