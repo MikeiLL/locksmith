@@ -1,14 +1,6 @@
 @import url(../node_modules/normalize.css/normalize.css);
 @import url(../node_modules/font-awesome/css/font-awesome.css);
 @import url(../node_modules/fullpage.js/jquery.fullPage.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400");
-@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-@import url("https://fonts.googleapis.com/css?family=Risque");
-@import url("https://fonts.googleapis.com/css?family=Acme");
-@import url("https://fonts.googleapis.com/css?family=Rye");
 @import url("https://fonts.googleapis.com/css?family=Domine:400,700");
 * {
   box-sizing: border-box;
@@ -110,33 +102,9 @@ button, a {
 }
 
 /* CLARENDON ALT */
-/* font-family: 'Nunito', sans-serif;
-font-family: 'Cinzel', serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Risque', cursive;
-font-family: 'Acme', sans-serif;
-font-family: 'Rye', cursive;
-font-family: 'Domine', serif;
-
-*/
 @font-face {
   font-family: 'ansley_displayregular';
   src: url("../fonts/ansley_display-regular-webfont.woff2") format("woff2"), url("../fonts/ansley_display-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ansley_displaylight';
-  src: url("../fonts/ansley_display-light-webfont.woff2") format("woff2"), url("../fonts/ansley_display-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'righteousregular';
-  src: url("../fonts/righteous-regular-webfont.woff2") format("woff2"), url("../fonts/righteous-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -408,25 +376,6 @@ h6 {
   fill: #4b3213 !important;
 }
 
-.tagline-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  color: #594335;
-  width: 100%;
-}
-
-.tagline {
-  color: #4b3213;
-  font-size: 1rem;
-  font-family: 'Rye', cursive;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .address-wrapper {
   color: #ffffef;
   margin-top: auto;
@@ -526,10 +475,6 @@ h6 {
   width: 85px;
 }
 
-.curly-q-divider {
-  width: 150px;
-}
-
 .div-wrapper {
   color: #fff;
   font-size: 1.2rem;
@@ -568,9 +513,6 @@ h6 {
   }
   .logo {
     width: 60%;
-  }
-  .tagline {
-    font-size: 3.5rem;
   }
   .section-1-bottom {
     -ms-flex-flow: row;
