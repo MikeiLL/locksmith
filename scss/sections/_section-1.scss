@@ -2,251 +2,194 @@
 
 .section-1 {
     background-color: $paleYellow;
-    .text {
-        margin: 0 auto;
-        display: block;
-        position: relative;
-        color: #fff;
-        font-size: 2.5rem;
-        white-space: nowrap;
-
-        img {
-            margin: 0 auto;
-            display: block;
-        }
-    }
 }
 
 .section-1-top {
-    padding-top: 1rem;
-    //height: 25vh;
+    display: flex;
+    //height: calc(80vh - 30px);
+    height:50vh;
+    flex-flow: column;
+    justify-content: flex-end;
+    margin-top: -30px;
     overflow: hidden;
+    padding-top: 30px;
     position: relative;
-}
-
-.logo-wrapper, .tagline {
-    height: 75%;
-    padding:0 1.5%;
 }
 
 .logo-wrapper {
-    float: left;
-    width: 60%;
-    .logo {
-        width: 100%;
-        margin: -40% 0;
-        transform: translateY(-50%);
-    }
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-.header__subtext {
-  font-family: 'Acme', sans-serif;
-  color: $drkBrown;
-  font-size: 2.5rem;
-  position: relative;
-  left: -5px;
+.logo {
+    margin: 0 auto;
 }
 
-.tagline {
-    //background-color: rgba(0, 0, 255, 0.2);
+.logo path {
+    fill: $primary-dark-color !important;
+}
+
+.tagline-wrapper { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Risque', cursive;
     color: $drkBrown;    
-
-    width: 40%;
-    float: right;    
-
-    h2, h4 {
-        text-align: right;
-
-    }
+    //width: 40%;
+    width: 100%;
 }
+
+    .tagline {
+        color:$primary-dark-color;
+        font-size: 1rem;
+        font-family: 'Rye', cursive;
+        text-align: center;
+        text-transform: uppercase;
+    }
 
 .address-wrapper {
-    clear: both;
-    margin-top: 5px;
+    //background-color: $primary-dark-color;
+    color: $white;
+    margin-top: auto;
     text-align: center;
+    padding:4px 0;
     width: 100%;
 }
-
-.hr-1-wrapper {
-    width: 100%;
-}
-
-.hr-1-wrapper img {
-  width: 65%;
-  height: 20px;
-  margin: 10px auto;
-  display: block;
-}
-
-.address {
-    color: $drkGreen;
-    font-weight: 700;
-    font-size: 14px;
-}
-
-.gunsmith {
-    background-color: $drkGreen;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    font-family: cursive;
-    text-align: center;
-    width: 35%;
-    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
-    height: 65px;
-    justify-content: center;
-    position: relative;
-    left: 50%;
-}
-
-
-.section-1-subsection-divider {
-    width: 90%;
-}
-
-.section-1-middle {
-    background-color: aqua;
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-    height: 20vh;
-}
-
-.general-notice, .gunsmith-no-auto {
-    width: 50%;
-    padding: 0 1%;
-}
-
-.general-notice {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(1vw + 1vh + .95vmin);
-}
-
-.gunsmith-no-auto {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/*
-.gunsmith, .no-auto-notice {
-    width: 85%;
-}
-
-.gunsmith {
-    border: 4px groove #cdcdcd;
-    height: 30%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-*/
-.right-arrow {
-    width: 15px;
-}
-
-.no-auto-notice {
-    //background-image: url('../images/orange-badge-first-try.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border: 3px solid #000;
-    border-radius: 6px;
-    text-align: center;
-    font-size: .75rem;
-    padding: 2%;
-    span {
-        display: block;
-        clear:both;
-        width: 100%;
+    .address {
+        color: $primary-dark-color;
+        font-family: 'Domine', serif;
+        font-size: 2.6rem;
+        letter-spacing: 1px;
+        font-weight: bold;
     }
-    .emoji {
-        width: 20px;
-    }   
+
+.section-1-bottom {
+    display:flex;
+    flex-flow: column;
+    height: 50vh;
 }
 
-/* SECTION 1 SERVICES */
-.section-1-services {
+.section-1-bottom-cell {
+    height: 33.33%;
+    width: 100%;
+    padding: .35%;
+
+}
+
+.section-1-bottom-cell-1 {
+    background-color: $primary-red;
+}
+
+.section-1-bottom-cell-2 {
+    background-color: $primary-blue;
+}
+
+.bottom-cell-wrapper {
+    border-width: 2px;
+    border-style: solid;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: flex-start;
     padding-top: 1rem;
 }
 
-.services {
-    background-image: url('../images/60-lines.png');
-    background-color: yellow;
-    border: 1px solid #222;
+.bottom-cell-wrapper-1,
+.bottom-cell-wrapper-2 {
+    border-color: $white;
+} 
+
+.bottom-cell-wrapper-2 {
+    padding-bottom: .85rem;
+}
+
+.key-icon {
+    width: 150px;
+    height: auto;
     margin: 0 auto;
-    padding: 10px 2%;
-    width: 80%;
-    transform: rotate(-2deg);
-
-    -webkit-box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.75);
 }
 
-.services-title {
+.general-lock-notice {
+    color: $white;
+    font-family: 'Domine', serif;
+    font-size: 2rem;
     text-align: center;
+    width: 70%;
 }
 
-.services-list {
-    //list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANnSURBVGhDzdpJyE1hHMfxKyEiQ2aRFIWFaYFSKKUokYWVorAxLPSSJFnIEGJLmXZYKJKlBZmKQuZxocg8Z8j0/Z06b//7vM+5Z7jn7Ty/+ize555zz/N/73nOOfd5bi0hE7ELN/AW/yr0FfdxEHPRAanph2P4C9+bhuAyxiMxY/AMvp1Do09pAdpEn4SviD94hGsVuoPvcPv2E5NRl+OwG/3GHgxCCOmBlfgA28+n6IIoOt/smFARCxFiRuM1bDEqMMpu2Bf0d8jR2LD9vYIousTGjRoTgxF6NG5tn3ui7j7xWA0VpiOmoU/0V3IOI+6z6Ipb13BJDRWlE85D/fiMFUi6+e2E7beKr2u4oIaKsgW2L3IGvivndtjtgilkEn7B9iX2CiNgE2Qhug/chu2HqwU2QRayA7YPPtNhE1whU6EbsO2D6wjcBFVINzyEPb7rOXrBTVCF7IM9tkuPTbPhSzCFzEDad579SEoQhehJVk+t9rguvd4dSQmikAOwx3Tp2cm9SrmpvBCd82mn1F6kpdJCekNXIXs81wN0RVoqLeQo7LFcup9MQZZUVsh82OP4qHNZ01Qhw6DH7BdYroaM6YuXsMdx3ULrd+8MKVyIinAvmWuRJSdg93PpqXcC8qRQIb4iYu5TqZtF8O1nbUbe5C5E39ruwW7jWg9fBuIdfPvENG+lY+RN7kJGwb6eZAPcnIJv29gPjEWR5C5EkwHXYbdJshFxlsC3jbUORVNojAyApi3tdkk2YSg+mjafi9A/qWgKFaLkKSbt7v0NI9FMChei5CmmkTVoNk0VojRbzDlkWqhJSdOFKEWL0aTbcJSRUgpRihSzDGWltEKUPMWcRRmnVJxSC1GyFPMeQ1BmSi9ESStmMcpOuxSiJBVzEu0RbyFfTMNdNRRMf5xG/F661GrGpD2iqaL4OBJ9DdBifNygB7lG0zBZomUArUuWObjdaLnNFqJ/Yu2QaZBVCDn6VYadidGERZQ5sIXogU+rpyFGZ8tN2P5uQxSdAu5H9QbeXxZUGI0Du3Arn6A5gdaMg55K7Uai1VNN62vNTusYVdDAvgrfxN5StMk8aLC7G4dqKxKjhZcn8O0YCv2Mw/tJuOmM1dC40YSy782qoEUh3QjrxkTW6BcFmiCYiVkV0SDXk0OD1Gr/AWeO2VMXCKRzAAAAAElFTkSuQmCC"');
-    //list-style-image: url('../images/checkbox.png');
-    columns: 2;
-    list-style: none;
-    padding:0;
-    margin:0;
+.antique-gun {
+    width: 270px;
 }
 
-.services-list li:before{
-   content: '√  ';
+.gunsmith-link {
+    color: $white;
+    font-family: 'Artist-Modern', sans-serif;
+    font-size: 4.5rem;
+    margin-top: -25px;
+
+    a {
+        color: $white;
+    }
+}
+
+.gunsmith-hand-link {
+    border: 0px solid red;
+}
+
+.gunsmith-hand {
+    width: 85px;
+}
+
+.curly-q-divider {
+    width: 150px;
+}
+.div-wrapper {
+    color: #fff;
+    font-size: 1.2rem;    
+}
+
+.no-auto-wrapper {
+    border: 0px solid white;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+    align-items: center;
+}
+
+.no-auto {
+    color: $white;
+    font-family: 'Domine';
+    font-size: 1.8rem;
+}
+
+.no-car-icon {
+    width: 60px;
 }
 
 @media (min-width: 768px) {
     .section-1-top {
-        height: auto;    
+        height:60vh;
+        justify-content: center;
     }
-    .logo-wrapper, .tagline {
-        width: 100%;
+    .logo-wrapper {
+        margin-top: 20px;
     }
+
     .logo {
-        max-width: 45%;
-        margin:0 auto !important;
-        display: block;
-        transform: translateY(0) !important;
-    } 
-    
+        width: 60%;
+    }
     .tagline {
-        margin: 1.4rem 0;
+        font-size: 3.5rem;
     }
-
-    .header__subtext {
-        font-family: 'AnsleyDisplay-Bold';  
-        color: $drkBrown;
-        font-size: 2.5rem;
-    }
-
-
-    .general-notice {
-        width: 33.33%;
-    }
-
-    .general-notice span {
-        display: inline-block;
-        width: 87.5%;
-    }
-    .gunsmith-no-auto {
-        width:66.66%;
+   .section-1-bottom {
         flex-flow: row;
+        height: 40vh;
     }
-    .gunsmith {
-        height: 80%;
-    }
+
+    .section-1-bottom-cell {
+        height: 100%;
+        width: 50%;
+    }     
 }

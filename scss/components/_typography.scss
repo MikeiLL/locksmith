@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Risque');
 @import url('https://fonts.googleapis.com/css?family=Acme');
+@import url('https://fonts.googleapis.com/css?family=Rye');
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700'); /* CLARENDON ALT */
+
+
 
 /* font-family: 'Nunito', sans-serif;
 font-family: 'Cinzel', serif;
@@ -12,42 +16,44 @@ font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Risque', cursive;
 font-family: 'Acme', sans-serif;
+font-family: 'Rye', cursive;
+font-family: 'Domine', serif;
+
 */
 
 @font-face {
-  font-family: 'Ansley Display-Regular';
-  src: url('fonts/Ansley Display-Regular.eot');
-  src: url('fonts/Ansley Display-Regular.woff2') format('woff2'),
-       url('fonts/Ansley Display-Regular.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'ansley_displayregular';
+    src: url('../fonts/ansley_display-regular-webfont.woff2') format('woff2'),
+             url('../fonts/ansley_display-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'AnsleyDisplay';
-  src: url('fonts/AnsleyDisplay.woff') format('woff'),
-       url('fonts/AnsleyDisplay.ttf') format('truetype'); 
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'ansley_displaylight';
+    src: url('../fonts/ansley_display-light-webfont.woff2') format('woff2'),
+         url('../fonts/ansley_display-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Ansley Display-Bold';
-  src: url('fonts/Ansley Display-Bold.eot');
-  src: url('fonts/Ansley Display-Bold.woff2') format('woff2'),
-       url('fonts/Ansley Display-Bold.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'righteousregular';
+    src: url('../fonts/righteous-regular-webfont.woff2') format('woff2'),
+         url('../fonts/righteous-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'AnsleyDisplay-Bold';
-  src: url('fonts/AnsleyDisplay-Bold.woff') format('woff'),
-       url('fonts/AnsleyDisplay-Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Artist-Modern';
+    src:  url('../fonts/Artist-Modern.ttf.woff') format('woff'),
+    url('../fonts/Artist-Modern.ttf.svg#Artist-Modern') format('svg'),
+    url('../fonts/Artist-Modern.ttf.eot'),
+    url('../fonts/Artist-Modern.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
 }
-
 
 /*
  * Modular Scale and Typi Mappings
