@@ -11,6 +11,15 @@ html {
   font-size: 16px;
 }
 
+header, .fullpage-wrapper {
+  max-width: 1350px;
+}
+
+.fullpage-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 hr {
   height: 2px;
   width: 90%;
@@ -47,9 +56,23 @@ button, a {
   -webkit-tap-highlight-color: transparent;
 }
 
+.section {
+  overflow: hidden;
+}
+
 .section .container {
   height: 100%;
   position: relative;
+}
+
+.section-title {
+  font-family: 'Domine', serif;
+  margin: 0;
+  position: absolute;
+  top: 7.5%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  white-space: nowrap;
 }
 
 .menu {
@@ -65,7 +88,7 @@ button, a {
 .menu li {
   width: 10px;
   height: 10px;
-  background-color: #4b3213;
+  background-color: #594335;
   border-radius: 50%;
   margin-bottom: 30px;
 }
@@ -76,7 +99,7 @@ button, a {
 
 .menu li.active {
   background-color: transparent;
-  border: 2px solid #4b3213;
+  border: 2px solid #594335;
 }
 
 .menu li a {
@@ -122,14 +145,15 @@ html {
 
 body,
 p {
-  font-size: 100%;
+  font-size: 75%;
   line-height: 1.3;
+  font-family: 'Domine', serif;
 }
 
 @media all and (min-width: 576px) {
   body,
   p {
-    font-size: 106.25%;
+    font-size: 75%;
     line-height: 1.3;
   }
 }
@@ -137,7 +161,7 @@ p {
 @media all and (min-width: 768px) {
   body,
   p {
-    font-size: 112.5%;
+    font-size: 81.25%;
     line-height: 1.3;
   }
 }
@@ -145,7 +169,33 @@ p {
 @media all and (min-width: 992px) {
   body,
   p {
-    font-size: 118.75%;
+    font-size: 87.5%;
+    line-height: 1.3;
+  }
+}
+
+li {
+  font-size: 1.33333rem;
+  line-height: 1.3;
+}
+
+@media all and (min-width: 576px) {
+  li {
+    font-size: 1.33333rem;
+    line-height: 1.3;
+  }
+}
+
+@media all and (min-width: 768px) {
+  li {
+    font-size: 1.41667rem;
+    line-height: 1.3;
+  }
+}
+
+@media all and (min-width: 992px) {
+  li {
+    font-size: 1.5rem;
     line-height: 1.3;
   }
 }
@@ -160,79 +210,79 @@ h6 {
 }
 
 h1 {
-  font-size: 1.728rem;
+  font-size: 2.37037rem;
   line-height: 1.2;
 }
 
 @media all and (min-width: 576px) {
   h1 {
-    font-size: 2.0736rem;
+    font-size: 2.37037rem;
     line-height: 1.2;
   }
 }
 
 @media all and (min-width: 768px) {
   h1 {
-    font-size: 2.48832rem;
+    font-size: 3.16049rem;
     line-height: 1.25;
   }
 }
 
 @media all and (min-width: 992px) {
   h1 {
-    font-size: 2.98598rem;
+    font-size: 4.21399rem;
     line-height: 1.25;
   }
 }
 
 h2 {
-  font-size: 1.44rem;
+  font-size: 1.77778rem;
   line-height: 1.2;
 }
 
 @media all and (min-width: 576px) {
   h2 {
-    font-size: 1.728rem;
+    font-size: 2.37037rem;
     line-height: 1.2;
   }
 }
 
 @media all and (min-width: 768px) {
   h2 {
-    font-size: 2.0736rem;
+    font-size: 3.16049rem;
     line-height: 1.2;
   }
 }
 
 @media all and (min-width: 992px) {
   h2 {
-    font-size: 2.48832rem;
+    font-size: 4.21399rem;
     line-height: 1.2;
   }
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.33333rem;
   line-height: 1.2;
 }
 
 @media all and (min-width: 576px) {
   h3 {
-    font-size: 1.44rem;
+    font-size: 1.77778rem;
     line-height: 1.2;
   }
 }
 
 @media all and (min-width: 768px) {
   h3 {
-    font-size: 1.728rem;
+    font-size: 2.37037rem;
     line-height: 1.2;
   }
 }
 
 @media all and (min-width: 992px) {
   h3 {
-    font-size: 2.0736rem;
+    font-size: 3.16049rem;
     line-height: 1.2;
   }
 }
@@ -244,27 +294,27 @@ h4 {
 
 @media all and (min-width: 576px) {
   h4 {
-    font-size: 1.2rem;
+    font-size: 1.33333rem;
     line-height: 1.1;
   }
 }
 
 @media all and (min-width: 768px) {
   h4 {
-    font-size: 1.44rem;
+    font-size: 1.77778rem;
     line-height: 1.1;
   }
 }
 
 @media all and (min-width: 992px) {
   h4 {
-    font-size: 1.728rem;
+    font-size: 2.37037rem;
     line-height: 1.1;
   }
 }
 
 h5 {
-  font-size: 0.83333rem;
+  font-size: 0.75rem;
   line-height: 1.4;
 }
 
@@ -277,26 +327,26 @@ h5 {
 
 @media all and (min-width: 768px) {
   h5 {
-    font-size: 1.2rem;
+    font-size: 1.33333rem;
     line-height: 1;
   }
 }
 
 @media all and (min-width: 992px) {
   h5 {
-    font-size: 1.44rem;
+    font-size: 1.77778rem;
     line-height: 1;
   }
 }
 
 h6 {
-  font-size: 0.69444rem;
+  font-size: 0.5625rem;
   line-height: 1.2;
 }
 
 @media all and (min-width: 576px) {
   h6 {
-    font-size: 0.83333rem;
+    font-size: 0.75rem;
     line-height: 1.2;
   }
 }
@@ -310,7 +360,7 @@ h6 {
 
 @media all and (min-width: 992px) {
   h6 {
-    font-size: 1.2rem;
+    font-size: 1.33333rem;
     line-height: 1;
   }
 }
@@ -324,6 +374,10 @@ h6 {
   position: fixed;
   width: 100%;
   z-index: 1;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header a {
@@ -331,35 +385,38 @@ h6 {
 }
 
 .header span {
-  font-size: 1.6rem;
+  font-size: .65rem;
   font-weight: 400;
   font-family: 'Domine', serif;
 }
 
 .section-1 {
   background-color: #f5f4d6;
+  padding-top: 0 !important;
 }
 
 .section-1-top {
   display: -ms-flexbox;
   display: flex;
-  height: 50vh;
+  height: 40vh;
   -ms-flex-flow: column;
       flex-flow: column;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  margin-top: -36px;
   overflow: hidden;
-  padding-top: 30px;
+  padding-top: 36px;
   position: relative;
 }
 
 .logo-wrapper {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
   -ms-flex-align: center;
       align-items: center;
-  width: 100%;
+  margin: auto;
+  width: 95%;
 }
 
 .logo {
@@ -367,35 +424,46 @@ h6 {
 }
 
 .logo path {
-  fill: #4b3213 !important;
-}
-
-.address-wrapper {
-  color: #ffffef;
-  margin-top: auto;
-  text-align: center;
-  padding: 4px 0;
-  width: 100%;
+  fill: #594335 !important;
 }
 
 .address {
-  color: #4b3213;
+  border: 1px solid pink;
+  /* margin-top: auto; */
+  margin: auto;
+  text-align: center;
+  padding: 4px 0;
+  width: 90%;
+  display: inline-block;
+  white-space: nowrap;
+  color: #594335;
   font-family: 'Domine', serif;
-  font-size: 2.6rem;
+  font-size: 3.9vw;
   letter-spacing: 1px;
   font-weight: bold;
 }
 
+/*
+    .address {
+        color: $primary-dark;
+        font-family: 'Domine', serif;
+        //font-size: 2.6rem;
+        font-size: .85rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+*/
 .section-1-bottom {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column;
       flex-flow: column;
-  height: 50vh;
+  height: 60vh;
 }
 
 .section-1-bottom-cell {
   height: 33.33%;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -411,6 +479,7 @@ h6 {
 .bottom-cell-wrapper {
   border-width: 2px;
   border-style: solid;
+  border-color: #ffffef;
   height: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -420,40 +489,52 @@ h6 {
       flex-flow: column;
   -ms-flex-pack: start;
       justify-content: flex-start;
-  padding-top: 1rem;
+  padding-top: 7px;
+  padding-left: 2%;
+  padding-right: 2%;
   text-align: center;
-}
-
-.bottom-cell-wrapper {
-  border-color: #ffffef;
 }
 
 /*
 .bottom-cell-wrapper-2 {
     padding-bottom: .85rem;
 } */
+/* GENERAL NOTICE */
 .key-icon {
-  width: 170px;
   height: auto;
   margin: 0 auto;
+  width: 65px;
 }
 
 .general-lock-notice {
   color: #ffffef;
   font-family: 'Domine', serif;
-  font-size: 1.6rem;
+  font-size: .9rem;
   text-align: center;
-  width: 70%;
+  width: 95%;
 }
 
+/* NO AUTO */
+.no-car-icon {
+  margin: 0 auto;
+  width: 40px;
+}
+
+.no-auto {
+  color: #ffffef;
+  font-family: 'Domine';
+  display: block;
+}
+
+/* GUNSMITH */
 .antique-gun {
-  width: 270px;
+  width: 145px;
 }
 
 .gunsmith-link {
   color: #ffffef;
   font-family: 'Artist-Modern', sans-serif;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 
 .gunsmith-link a {
@@ -469,17 +550,31 @@ h6 {
   margin-top: 1rem;
 }
 
-.no-car-icon {
-  display: block;
-  margin: 0 auto;
-  width: 75px;
+@media (min-width: 430px) {
+  .logo-wrapper {
+    width: 95%;
+  }
+  .address {
+    font-size: 2.6vw;
+  }
 }
 
-.no-auto {
-  color: #ffffef;
-  font-family: 'Domine';
-  font-size: 1.8rem;
-  display: block;
+@media (min-width: 540px) {
+  .logo-wrapper {
+    width: 82.5%;
+  }
+  .address {
+    font-size: 2.6vw;
+  }
+}
+
+@media (min-width: 650px) {
+  .logo-wrapper {
+    width: 70%;
+  }
+  .address {
+    font-size: 2vw;
+  }
 }
 
 @media (min-width: 768px) {
@@ -489,10 +584,7 @@ h6 {
         justify-content: center;
   }
   .logo-wrapper {
-    margin-top: 20px;
-  }
-  .logo {
-    width: 60%;
+    width: 85%;
   }
   .section-1-bottom {
     -ms-flex-flow: row;
@@ -502,6 +594,9 @@ h6 {
   .section-1-bottom-cell {
     height: 100%;
   }
+  .bottom-cell-wrapper {
+    padding-top: 5%;
+  }
   .section-1-bottom-cell-1,
   .section-1-bottom-cell-3 {
     width: 40%;
@@ -509,24 +604,47 @@ h6 {
   .section-1-bottom-cell-2 {
     width: 20%;
   }
+  .key-icon {
+    width: 170px;
+  }
+  .general-lock-notice, .no-auto {
+    font-size: 1.6rem;
+  }
+  .no-car-icon {
+    width: 70px;
+  }
+  .no-auto span {
+    display: block;
+  }
+  .antique-gun {
+    width: 270px;
+  }
+  .gunsmith-link {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-wrapper {
+    width: 67.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-wrapper {
+    max-width: 827px;
+  }
+  .address {
+    font-size: 1.5rem;
+  }
 }
 
 .section-2 {
   background-color: #f5f4d6;
 }
 
-.section-2 .text {
-  margin: 0;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  color: #4b3213;
-  white-space: nowrap;
-}
-
 .services__title {
-  font-size: 4.5rem;
+  color: #594335;
 }
 
 .services__list {
@@ -539,23 +657,61 @@ h6 {
 }
 
 .services__list li {
-  color: #4b3213;
+  color: #594335;
   font-family: 'Domine', serif;
-  font-size: 1.6rem;
   margin-bottom: 1.25rem;
 }
 
 .section-3 {
-  background-color: #565f77;
+  background-color: #0088a7;
+  color: #ffffef;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
 }
 
-.section-3 .text {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  color: #fff;
-  font-size: 2.5rem;
-  white-space: nowrap;
+.customer__title {
+  color: #ffffef;
+}
+
+.customer__reviews-wrapper {
+  margin-top: 2rem;
+  position: relative;
+  top: 17.5%;
+}
+
+.customer__review {
+  border: 2px solid #ffffef;
+  border-radius: 6px;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+}
+
+.customer__headshot-name {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+      flex-flow: row;
+}
+
+.customer__headshot {
+  width: 25%;
+}
+
+.customer__pic {
+  width: 100%;
+}
+
+.customer__name {
+  font-size: 1.4rem;
+  width: 75%;
+}
+
+.customer__stars-wrapper {
+  height: 30px;
+  overflow: none;
+}
+
+.customer__stars {
+  width: 40%;
+  height: 30%;
 }

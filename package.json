@@ -26,6 +26,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "fitty": "^2.2.5",
     "font-awesome": "^4.5.0",
     "fullpage.js": "^2.7.9",
     "jquery": "^3.3.1",

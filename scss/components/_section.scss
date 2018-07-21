@@ -1,8 +1,21 @@
 @charset "UTF-8";
 
 .section {
+    overflow:hidden;
     .container {
         height: 100%;
         position: relative
     }
+
+}
+
+.section-title {
+    
+    font-family: 'Domine', serif;
+    margin: 0;
+	position: absolute;
+	top: 7.5%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	white-space: nowrap;
 }

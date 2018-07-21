@@ -1,15 +1,55 @@
 @charset "UTF-8";
 
 .section-3 {
-    background-color: #565f77;
-    .text {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        color: #fff;
-        font-size: 2.5rem;
-        white-space: nowrap;
-    }
+    background-color: $primary-blue;
+    color: $white;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
 }
+
+.customer__title {
+    color: $white;
+}
+
+.customer__reviews-wrapper {
+    margin-top: 2rem;
+    position: relative;
+    top: 17.5%;
+}
+
+.customer__review {
+    border: 2px solid $white;
+    border-radius: 6px;   
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
+    
+    .customer__headshot-name {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .customer__headshot {
+        width: 25%;
+    }
+
+        .customer__pic {
+            width: 100%;
+        }
+
+    .customer__name {
+        font-size: 1.4rem;
+        width: 75%;
+    }    
+        .customer__review-content {
+            //font-size: .85rem;*/
+        }
+
+    .customer__stars-wrapper {
+        height: 30px;
+        overflow: none;
+    }
+        .customer__stars {
+            width: 40%;
+            height: 30%;
+        }

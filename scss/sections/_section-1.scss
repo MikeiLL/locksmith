@@ -2,24 +2,25 @@
 
 .section-1 {
     background-color: $primary-bg;
+    padding-top: 0 !important;
 }
 
 .section-1-top {
     display: flex;
-    //height: calc(80vh - 30px);
-    height:50vh;
+    height:40vh;
     flex-flow: column;
     justify-content: flex-end;
-    margin-top: -36px;
     overflow: hidden;
-    padding-top: 30px;
+    padding-top: 36px;
     position: relative;
 }
 
 .logo-wrapper {
     display: flex;
+    flex: 1 0 auto;
     align-items: center;
-    width: 100%;
+    margin: auto;
+    width: 95%;
 }
 
 .logo {
@@ -30,29 +31,43 @@
     fill: $primary-dark !important;
 }
 
-.address-wrapper {
-    color: $white;
-    margin-top: auto;
+.address {
+    border: 1px solid pink;
+    /* margin-top: auto; */
+    margin: auto;
     text-align: center;
     padding:4px 0;
-    width: 100%;
+    width: 90%;
+    display: inline-block;
+    white-space: nowrap;
+
+    color: $primary-dark;
+    font-family: 'Domine', serif;
+    
+    //font-size: .85rem;
+    font-size: 3.9vw;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
+/*
     .address {
         color: $primary-dark;
         font-family: 'Domine', serif;
-        font-size: 2.6rem;
+        //font-size: 2.6rem;
+        font-size: .85rem;
         letter-spacing: 1px;
         font-weight: bold;
     }
-
+*/
 .section-1-bottom {
     display:flex;
     flex-flow: column;
-    height: 50vh;
+    height: 60vh;
 }
 
 .section-1-bottom-cell {
     height: 33.33%;
+    overflow: hidden;
     width: 100%;
 }
 
@@ -68,46 +83,68 @@
 .bottom-cell-wrapper {
     border-width: 2px;
     border-style: solid;
+    border-color: $white;
     height: 100%;
     display: flex;
     align-items: center;
     flex-flow: column;
     justify-content: flex-start;
-    padding-top: 1rem;
+    padding-top: 7px;
+    padding-left: 2%;
+    padding-right: 2%;
     text-align: center;
 }
-
-.bottom-cell-wrapper {
-  border-color: $white;
-} 
 
 /*
 .bottom-cell-wrapper-2 {
     padding-bottom: .85rem;
 } */
 
+.section-1-icon {
+    //display: none;
+}
+
+/* GENERAL NOTICE */
+
 .key-icon {
-    width: 170px;
     height: auto;
     margin: 0 auto;
+    width: 65px;
 }
 
 .general-lock-notice {
     color: $white;
     font-family: 'Domine', serif;
-    font-size: 1.6rem;
+    font-size: .9rem;
     text-align: center;
-    width: 70%;
+    width: 95%;
 }
 
+/* NO AUTO */
+
+.no-car-icon {
+    //display: block;
+    margin: 0 auto;
+    width: 40px;
+}
+
+.no-auto {
+    color: $white;
+    font-family: 'Domine';
+    //font-size: 1.8rem;
+    display: block;
+}
+
+/* GUNSMITH */
 .antique-gun {
-    width: 270px;
+    //width: 270px;
+    width: 145px;
 }
 
 .gunsmith-link {
     color: $white;
     font-family: 'Artist-Modern', sans-serif;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     
     a { color: $white; }
 }
@@ -121,17 +158,33 @@
     margin-top: 1rem;
 }
 
-.no-car-icon {
-    display: block;
-    margin: 0 auto;
-    width: 75px;
+@media (min-width: 430px) {
+    .logo-wrapper {
+        width: 95%;
+    }
+    .address {
+        font-size: 2.6vw;
+    }
 }
 
-.no-auto {
-    color: $white;
-    font-family: 'Domine';
-    font-size: 1.8rem;
-    display: block;
+@media (min-width: 540px) {
+    .logo-wrapper {
+        width: 82.5%;
+    }
+    .address {
+        font-size: 2.6vw;
+    }
+}
+
+@media (min-width: 650px) {
+    
+    .logo-wrapper {
+        width: 70%;
+    }
+
+    .address {
+        font-size: 2vw;
+    }
 }
 
 @media (min-width: 768px) {
@@ -141,13 +194,9 @@
     }
 
     .logo-wrapper {
-        margin-top: 20px;
+        width: 85%;
     }
 
-    .logo {
-        width: 60%;
-    }
-    
     .section-1-bottom {
         flex-flow: row;
         height: 40vh;
@@ -157,12 +206,53 @@
         height: 100%;
     }
 
+    .bottom-cell-wrapper {
+        padding-top: 5%;
+    }
+
     .section-1-bottom-cell-1,
     .section-1-bottom-cell-3 {
         width: 40%;
     }
+    
     .section-1-bottom-cell-2 {
         width: 20%;
     }
+    
+    .key-icon {
+        width: 170px;
+    }
 
+    .general-lock-notice, .no-auto {
+        font-size: 1.6rem;
+    }
+
+    .no-car-icon {
+        width: 70px;
+    }
+
+    .no-auto span { display: block; }
+    
+    .antique-gun {
+        width: 270px;
+    }
+
+    .gunsmith-link {
+        font-size: 4.5rem;
+    }
+
+}
+@media (min-width: 992px) {
+    .logo-wrapper {
+        width: 67.5%;
+    }
+    
+}
+@media (min-width: 1200px) {
+    .logo-wrapper {
+        max-width: 827px;
+    }
+    .address {
+        font-size: 1.5rem;
+    }
 }

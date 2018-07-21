@@ -10,13 +10,20 @@
     width: 100%;
     z-index: 1;
 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+
     a {
     	color: inherit;
     }
 }
 
 .header span {
-    font-size: 1.6rem;
+    //font-size: 1.6rem;
+    font-size: .65rem;
     font-weight: 400;
     font-family: 'Domine', serif;
 }
