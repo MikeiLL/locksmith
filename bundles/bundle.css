@@ -370,7 +370,7 @@ h6 {
   color: #ffffef;
   height: 36px;
   line-height: 30px;
-  padding: 0 20px;
+  padding: 0 10px;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -385,9 +385,36 @@ h6 {
 }
 
 .header span {
-  font-size: .65rem;
+  font-size: .6rem;
   font-weight: 400;
   font-family: 'Domine', serif;
+}
+
+@media (min-width: 526px) {
+  .header span {
+    font-size: .75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0 20px;
+  }
+  .header span {
+    font-size: .85rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header span {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header span {
+    font-size: 1.6rem;
+  }
 }
 
 .section-1 {
@@ -428,7 +455,6 @@ h6 {
 }
 
 .address {
-  border: 1px solid pink;
   /* margin-top: auto; */
   margin: auto;
   text-align: center;
@@ -552,10 +578,10 @@ h6 {
 
 @media (min-width: 430px) {
   .logo-wrapper {
-    width: 95%;
+    width: 92.5%;
   }
   .address {
-    font-size: 2.6vw;
+    font-size: 2.5vw;
   }
 }
 

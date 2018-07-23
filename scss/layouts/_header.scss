@@ -5,11 +5,10 @@
     color: #ffffef;
     height: 36px;
     line-height: 30px;
-    padding: 0 20px;
+    padding: 0 10px;
     position: fixed;
     width: 100%;
     z-index: 1;
-
     left: 0;
     right: 0;
     margin-left: auto;
@@ -23,7 +22,35 @@
 
 .header span {
     //font-size: 1.6rem;
-    font-size: .65rem;
+    font-size: .6rem;
     font-weight: 400;
     font-family: 'Domine', serif;
+}
+
+@media (min-width: 526px) {
+    .header span {
+        font-size: .75rem;
+    }    
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 0 20px;    
+    }
+    
+    .header span {
+        font-size: .85rem;
+    }    
+}
+
+@media (min-width: 992px) {
+    .header span {
+        font-size: 1rem;
+    }    
+}
+
+@media (min-width: 1200px) {
+    .header span {
+        font-size: 1.6rem;
+    }    
 }
