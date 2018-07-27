@@ -24,12 +24,16 @@ var velocity = require('velocity-animate');
 module.exports = function () {
     $('.section-2 .text')
         .velocity({
-            left: '40%',
+            translateX: '-50%',
+            translateY: '-50%',
+            scale: 0.4,
             opacity: 0
         }, 0)
         .delay(100)
         .velocity({
-            left: '50%',
+            translateX: '-50%',
+            translateY: '-50%',
+            scale: 1,
             opacity: 1
         }, 600, 'easeOutCubic');
 };

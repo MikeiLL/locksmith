@@ -3,18 +3,19 @@
 .header {
 	background-color: $drkBrown; 
     color: #ffffef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     height: 36px;
     line-height: 30px;
     padding: 0 10px;
     position: fixed;
-    width: 100%;
-    z-index: 1;
     left: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
-
-
+    width: 100%;
+    z-index: 1;
+    
     a {
     	color: inherit;
     }
@@ -51,6 +52,6 @@
 
 @media (min-width: 1200px) {
     .header span {
-        font-size: 1.6rem;
+        font-size: 1.25rem;
     }    
 }

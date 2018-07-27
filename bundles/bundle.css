@@ -69,9 +69,9 @@ button, a {
   font-family: 'Domine', serif;
   margin: 0;
   position: absolute;
-  top: 7.5%;
+  top: 8.5%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%);
   white-space: nowrap;
 }
 
@@ -88,7 +88,7 @@ button, a {
 .menu li {
   width: 10px;
   height: 10px;
-  background-color: #594335;
+  background-color: #e97254;
   border-radius: 50%;
   margin-bottom: 30px;
 }
@@ -99,7 +99,7 @@ button, a {
 
 .menu li.active {
   background-color: transparent;
-  border: 2px solid #594335;
+  border: 2px solid #e97254;
 }
 
 .menu li a {
@@ -368,16 +368,20 @@ h6 {
 .header {
   background-color: #594335;
   color: #ffffef;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   height: 36px;
   line-height: 30px;
   padding: 0 10px;
   position: fixed;
-  width: 100%;
-  z-index: 1;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  z-index: 1;
 }
 
 .header a {
@@ -413,7 +417,7 @@ h6 {
 
 @media (min-width: 1200px) {
   .header span {
-    font-size: 1.6rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -700,16 +704,23 @@ h6 {
 }
 
 .customer__reviews-wrapper {
-  margin-top: 2rem;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+  overflow: hidden;
   top: 17.5%;
 }
 
 .customer__review {
   border: 2px solid #ffffef;
   border-radius: 6px;
+  overflow: hidden;
   padding-top: .5rem;
   padding-bottom: 1rem;
+}
+
+.customer__review:nth-child(3) {
+  display: none;
 }
 
 .customer__headshot-name {
@@ -740,4 +751,50 @@ h6 {
 .customer__stars {
   width: 40%;
   height: 30%;
+}
+
+@media screen and (orientation: portrait) {
+  .customer__reviews-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .customer__review:nth-child(3) {
+    display: none;
+  }
+  .customer__review {
+    height: 37.5vh;
+    margin-bottom: 5px;
+  }
+  .customer__review p {
+    font-size: 60%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .customer__reviews-wrapper {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .customer__review {
+    margin: 0 1%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer__review {
+    -ms-flex: 1 50%;
+        flex: 1 50%;
+    /* 2 per flex row */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .customer__review {
+    -ms-flex: 1 33.33%;
+        flex: 1 33.33%;
+    /* 2 per flex row */
+  }
+  .customer__review:nth-child(3) {
+    display: block;
+  }
 }
