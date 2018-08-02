@@ -11,7 +11,7 @@
     color: $white;
 }
 
-.review-items-wrapper {
+.customer__reviews-wrapper {
     display: flex;
     position: relative;
     overflow: hidden;
@@ -105,7 +105,7 @@
 
 @media screen and (min-width: 992px) {
     .review-item {
-        flex:1 33.33%; /* 2 per flex row */
+        flex:1 33.33%; /* 3 per flex row */
     }
     .review-item:nth-child(3) {
         display: block;

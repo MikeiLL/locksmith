@@ -379,8 +379,7 @@ h6 {
   line-height: 30px;
   padding: 0 10px;
   position: fixed;
-  left: 0;
-  right: 0;
+  margin: 0 auto;
   width: 100%;
   z-index: 1;
 }
@@ -704,7 +703,7 @@ h6 {
   color: #ffffef;
 }
 
-.review-items-wrapper {
+.customer__reviews-wrapper {
   display: -ms-flexbox;
   display: flex;
   position: relative;
@@ -802,7 +801,7 @@ h6 {
   .review-item {
     -ms-flex: 1 33.33%;
         flex: 1 33.33%;
-    /* 2 per flex row */
+    /* 3 per flex row */
   }
   .review-item:nth-child(3) {
     display: block;
