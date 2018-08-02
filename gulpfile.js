@@ -37,7 +37,9 @@ gulp.task('compile-sass', function () {
 gulp.task('bundle-js', function () {
     return browserify({
         entries: [
-            'javascripts/main.js'
+            'javascripts/main.js',
+            'node_modules/google-places-data/google-places.js',
+            'javascripts/reviews.js',
         ],
         debug: true
     })

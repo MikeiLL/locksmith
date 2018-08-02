@@ -11,14 +11,14 @@
     color: $white;
 }
 
-.customer__reviews-wrapper {
+.review-items-wrapper {
     display: flex;
     position: relative;
     overflow: hidden;
     top: 17.5%;
 }
 
-.customer__review {
+.review-item {
     border: 2px solid $white;
     border-radius: 6px;  
     overflow: hidden; 
@@ -26,9 +26,14 @@
     padding-bottom: 1rem;
 }
     
-.customer__review:nth-child(3) {
+.review-item:nth-child(3) {
     display: none;
 }
+
+	.review-stars ul li i {
+		color: #E4B248;
+		font-size: 18px;
+	}
 
     .customer__headshot-name {
         display: flex;
@@ -43,11 +48,16 @@
             width: 100%;
         }
 
-    .customer__name {
+    .review-meta {
         font-size: 1.4rem;
         width: 75%;
     }    
-        .customer__review-content {
+    
+    .review-text {
+        font-size: 1.2rem;
+    }    
+    
+        .review-item-content {
             //font-size: .85rem;*/
         }
 
@@ -61,13 +71,13 @@
         }
 
 @media screen and (orientation: portrait) {
-    .customer__reviews-wrapper {
+    .review-items-wrapper {
         flex-direction: column;
     }
-    .customer__review:nth-child(3) {
+    .review-item:nth-child(3) {
         display: none;
     }
-    .customer__review {
+    .review-item {
         height: 37.5vh;
         margin-bottom: 5px;
         
@@ -78,26 +88,26 @@
 }
 
 @media screen and (orientation: landscape) { 
-    .customer__reviews-wrapper {
+    .review-items-wrapper {
         flex-direction: row;
     }
-    .customer__review {
+    .review-item {
         margin: 0 1%;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .customer__review {
+    .review-item {
         flex:1 50%; /* 2 per flex row */
     }
      
 }
 
 @media screen and (min-width: 992px) {
-    .customer__review {
+    .review-item {
         flex:1 33.33%; /* 2 per flex row */
     }
-    .customer__review:nth-child(3) {
+    .review-item:nth-child(3) {
         display: block;
     }
 }

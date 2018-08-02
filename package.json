@@ -4,7 +4,7 @@
   "description": "A full-page scrolling website boilerplate built using fullPage.js and Velocity.js.",
   "author": "Chris Pan",
   "devDependencies": {
-    "browser-sync": "^2.12.3",
+    "browser-sync": "^2.24.6",
     "browserify": "^13.0.0",
     "browserify-shim": "^3.8.12",
     "del": "^2.2.0",
@@ -29,6 +29,7 @@
     "fitty": "^2.2.5",
     "font-awesome": "^4.5.0",
     "fullpage.js": "^2.7.9",
+    "google-places-data": "^0.1.1",
     "jquery": "^3.3.1",
     "normalize.css": "^4.1.1",
     "velocity-animate": "^1.2.3"

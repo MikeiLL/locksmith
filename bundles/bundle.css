@@ -1,6 +1,7 @@
 @import url(../node_modules/normalize.css/normalize.css);
 @import url(../node_modules/font-awesome/css/font-awesome.css);
 @import url(../node_modules/fullpage.js/jquery.fullPage.css);
+@import url(../node_modules/google-places-data/google-places.css);
 @import url("https://fonts.googleapis.com/css?family=Domine:400,700");
 * {
   box-sizing: border-box;
@@ -703,7 +704,7 @@ h6 {
   color: #ffffef;
 }
 
-.customer__reviews-wrapper {
+.review-items-wrapper {
   display: -ms-flexbox;
   display: flex;
   position: relative;
@@ -711,7 +712,7 @@ h6 {
   top: 17.5%;
 }
 
-.customer__review {
+.review-item {
   border: 2px solid #ffffef;
   border-radius: 6px;
   overflow: hidden;
@@ -719,8 +720,13 @@ h6 {
   padding-bottom: 1rem;
 }
 
-.customer__review:nth-child(3) {
+.review-item:nth-child(3) {
   display: none;
+}
+
+.review-stars ul li i {
+  color: #E4B248;
+  font-size: 18px;
 }
 
 .customer__headshot-name {
@@ -738,9 +744,13 @@ h6 {
   width: 100%;
 }
 
-.customer__name {
+.review-meta {
   font-size: 1.4rem;
   width: 75%;
+}
+
+.review-text {
+  font-size: 1.2rem;
 }
 
 .customer__stars-wrapper {
@@ -754,34 +764,34 @@ h6 {
 }
 
 @media screen and (orientation: portrait) {
-  .customer__reviews-wrapper {
+  .review-items-wrapper {
     -ms-flex-direction: column;
         flex-direction: column;
   }
-  .customer__review:nth-child(3) {
+  .review-item:nth-child(3) {
     display: none;
   }
-  .customer__review {
+  .review-item {
     height: 37.5vh;
     margin-bottom: 5px;
   }
-  .customer__review p {
+  .review-item p {
     font-size: 60%;
   }
 }
 
 @media screen and (orientation: landscape) {
-  .customer__reviews-wrapper {
+  .review-items-wrapper {
     -ms-flex-direction: row;
         flex-direction: row;
   }
-  .customer__review {
+  .review-item {
     margin: 0 1%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .customer__review {
+  .review-item {
     -ms-flex: 1 50%;
         flex: 1 50%;
     /* 2 per flex row */
@@ -789,12 +799,12 @@ h6 {
 }
 
 @media screen and (min-width: 992px) {
-  .customer__review {
+  .review-item {
     -ms-flex: 1 33.33%;
         flex: 1 33.33%;
     /* 2 per flex row */
   }
-  .customer__review:nth-child(3) {
+  .review-item:nth-child(3) {
     display: block;
   }
 }
