@@ -13,6 +13,7 @@
     position: relative;
     top: 17.5%;
     margin: 0 auto;
+    padding-left: 0;
     text-align: center;
     width: 80%; 
 }
@@ -21,6 +22,17 @@
         color: $primary-dark;
         font-family: 'Domine', serif;
         //font-size: 1.6rem;
+        margin-bottom: .5rem;
+    }
+
+@media (min-width: 768px) {
+    .services__list li {
         margin-bottom: 1.25rem;
     }
-    
+}
+
+@media (min-width: 1024px) {
+    .services__list li {
+        margin-bottom: 1.75rem;
+    }
+}    

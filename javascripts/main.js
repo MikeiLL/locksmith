@@ -37,6 +37,7 @@ $(document).ready(function () {
     $('#btn-next').on('click', function () {
         $.fn.fullpage.moveSectionDown();
     });
+
 });
 
 function hideAnimatedItems() {

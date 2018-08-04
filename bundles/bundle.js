@@ -353,7 +353,6 @@ module.exports = function () {
         });
 
     }
-
 })(jQuery);
 
 },{}],5:[function(require,module,exports){
@@ -396,6 +395,7 @@ $(document).ready(function () {
     $('#btn-next').on('click', function () {
         $.fn.fullpage.moveSectionDown();
     });
+
 });
 
 function hideAnimatedItems() {
