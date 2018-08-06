@@ -17,7 +17,7 @@ module.exports = function () {
         }, 600, 'easeOutCubic');
 };
 
-},{"jquery":8,"velocity-animate":9}],2:[function(require,module,exports){
+},{"jquery":10,"velocity-animate":11}],2:[function(require,module,exports){
 var $ = window.jQuery = window.$ = require('jquery');
 var velocity = require('velocity-animate');
 
@@ -37,7 +37,7 @@ module.exports = function () {
             opacity: 1
         }, 600, 'easeOutCubic');
 };
-},{"jquery":8,"velocity-animate":9}],3:[function(require,module,exports){
+},{"jquery":10,"velocity-animate":11}],3:[function(require,module,exports){
 var $ = window.jQuery = window.$ = require('jquery');
 var velocity = require('velocity-animate');
 
@@ -57,7 +57,29 @@ module.exports = function () {
             opacity: 1
         }, 600, 'easeOutCubic');
 };
-},{"jquery":8,"velocity-animate":9}],4:[function(require,module,exports){
+},{"jquery":10,"velocity-animate":11}],4:[function(require,module,exports){
+var $ = window.jQuery = window.$ = require('jquery');
+var velocity = require('velocity-animate');
+
+module.exports = function () {
+    $('.section-4 .text')
+        .velocity({
+            translateX: '-50%',
+            translateY: '-50%',
+            scale: 0.4,
+            opacity: 0
+        }, 0)
+        .delay(100)
+        .velocity({
+            translateX: '-50%',
+            translateY: '-50%',
+            scale: 1,
+            opacity: 1
+        }, 600, 'easeOutCubic');
+};
+},{"jquery":10,"velocity-animate":11}],5:[function(require,module,exports){
+arguments[4][3][0].apply(exports,arguments)
+},{"dup":3,"jquery":10,"velocity-animate":11}],6:[function(require,module,exports){
 /* Based on https://github.com/peledies/google-places */
 (function($) {
 
@@ -355,7 +377,7 @@ module.exports = function () {
     }
 })(jQuery);
 
-},{}],5:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 var $ = require('jquery');
@@ -364,6 +386,8 @@ var fullpage = require('fullpage.js');
 var executeAnimationOfSection1 = require('./animations/section-1');
 var executeAnimationOfSection2 = require('./animations/section-2');
 var executeAnimationOfSection3 = require('./animations/section-3');
+var executeAnimationOfSection4 = require('./animations/section-4');
+var executeAnimationOfSection5 = require('./animations/section-5');
 
 $(document).ready(function () {  
     // disable velocity mobileHA because it overrides the transform values we defined in stylesheets.
@@ -384,8 +408,16 @@ $(document).ready(function () {
                     executeAnimationOfSection2();
                     break;
                 case 3:
-                    $('#btn-next').hide();          // hide btn-next when reaching the last section.
+                    $('#btn-next').show();
                     executeAnimationOfSection3();
+                    break;
+                case 4:
+                    $('#btn-next').show();
+                    executeAnimationOfSection4();
+                    break;
+                case 5:
+                    $('#btn-next').hide();          // hide btn-next when reaching the last section.
+                    executeAnimationOfSection5();
                     break;
             }
         }
@@ -403,7 +435,7 @@ function hideAnimatedItems() {
         opacity: 0
     });
 }
-},{"./animations/section-1":1,"./animations/section-2":2,"./animations/section-3":3,"fullpage.js":7,"jquery":8}],6:[function(require,module,exports){
+},{"./animations/section-1":1,"./animations/section-2":2,"./animations/section-3":3,"./animations/section-4":4,"./animations/section-5":5,"fullpage.js":9,"jquery":10}],8:[function(require,module,exports){
 /**
  * Reviews
  *
@@ -441,7 +473,7 @@ function hideAnimatedItems() {
 		});
     }); // End document ready
 })(jQuery);
-},{}],7:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 /*!
  * fullPage 2.9.7
  * https://github.com/alvarotrigo/fullPage.js
@@ -3366,7 +3398,7 @@ function hideAnimatedItems() {
     }; //end of $.fn.fullpage
 });
 
-},{"jquery":8}],8:[function(require,module,exports){
+},{"jquery":10}],10:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
@@ -13732,7 +13764,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}],9:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 /*! VelocityJS.org (1.5.0). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
 
 /*************************
@@ -18507,6 +18539,6 @@ return jQuery;
  Velocity, however, doesn't make this distinction. Thus, converting to or from the % unit with these subproperties
  will produce an inaccurate conversion value. The same issue exists with the cx/cy attributes of SVG circles and ellipses. */
 
-},{}]},{},[5,1,2,3,4,6])
+},{}]},{},[7,1,2,3,4,6,8])
 
 //# sourceMappingURL=bundle.js.map

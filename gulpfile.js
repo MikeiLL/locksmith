@@ -41,6 +41,7 @@ gulp.task('bundle-js', function () {
             'javascripts/animations/section-1.js',
             'javascripts/animations/section-2.js',
             'javascripts/animations/section-3.js',
+            'javascripts/animations/section-4.js',
             'javascripts/google-places.js',
             'javascripts/reviews.js'
             //'node_modules/google-places-data/google-places.js',
