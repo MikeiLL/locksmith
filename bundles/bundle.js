@@ -25,19 +25,53 @@ module.exports = function () {
     $('.section-2 .text')
         .velocity({
             translateX: '-50%',
-            translateY: '-50%',
             scale: 0.4,
             opacity: 0
         }, 0)
         .delay(100)
         .velocity({
             translateX: '-50%',
-            translateY: '-50%',
             scale: 1,
             opacity: 1
         }, 600, 'easeOutCubic');
 };
 },{"jquery":10,"velocity-animate":11}],3:[function(require,module,exports){
+var $ = window.jQuery = window.$ = require('jquery');
+var velocity = require('velocity-animate');
+
+module.exports = function () {
+    $('.section-3 .text')
+        .velocity({
+            scale: 0.4,
+            opacity: 0
+        }, 0)
+        .delay(100)
+        .velocity({
+            scale: 1,
+            opacity: 1
+        }, 600, 'easeOutCubic');
+};
+},{"jquery":10,"velocity-animate":11}],4:[function(require,module,exports){
+var $ = window.jQuery = window.$ = require('jquery');
+var velocity = require('velocity-animate');
+
+module.exports = function () {
+    $('.section-4 .text')
+        .velocity({
+            translateX: '-50%',
+            
+            scale: 0.4,
+            opacity: 0
+        }, 0)
+        .delay(100)
+        .velocity({
+            translateX: '-50%',
+            
+            scale: 1,
+            opacity: 1
+        }, 600, 'easeOutCubic');
+};
+},{"jquery":10,"velocity-animate":11}],5:[function(require,module,exports){
 var $ = window.jQuery = window.$ = require('jquery');
 var velocity = require('velocity-animate');
 
@@ -57,29 +91,7 @@ module.exports = function () {
             opacity: 1
         }, 600, 'easeOutCubic');
 };
-},{"jquery":10,"velocity-animate":11}],4:[function(require,module,exports){
-var $ = window.jQuery = window.$ = require('jquery');
-var velocity = require('velocity-animate');
-
-module.exports = function () {
-    $('.section-4 .text')
-        .velocity({
-            translateX: '-50%',
-            translateY: '-50%',
-            scale: 0.4,
-            opacity: 0
-        }, 0)
-        .delay(100)
-        .velocity({
-            translateX: '-50%',
-            translateY: '-50%',
-            scale: 1,
-            opacity: 1
-        }, 600, 'easeOutCubic');
-};
-},{"jquery":10,"velocity-animate":11}],5:[function(require,module,exports){
-arguments[4][3][0].apply(exports,arguments)
-},{"dup":3,"jquery":10,"velocity-animate":11}],6:[function(require,module,exports){
+},{"jquery":10,"velocity-animate":11}],6:[function(require,module,exports){
 /* Based on https://github.com/peledies/google-places */
 (function($) {
 

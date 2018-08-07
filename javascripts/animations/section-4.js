@@ -5,14 +5,14 @@ module.exports = function () {
     $('.section-4 .text')
         .velocity({
             translateX: '-50%',
-            translateY: '-50%',
+            
             scale: 0.4,
             opacity: 0
         }, 0)
         .delay(100)
         .velocity({
             translateX: '-50%',
-            translateY: '-50%',
+            
             scale: 1,
             opacity: 1
         }, 600, 'easeOutCubic');
