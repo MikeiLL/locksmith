@@ -165,7 +165,6 @@
           reviews = sort_by_date(reviews);
           reviews = filter_minimum_rating(reviews);
           reviews = remove_jami_review(reviews);
-		  console.log(reviews);
           var html = "";
           var row_count = (plugin.settings.max_rows > 0)? plugin.settings.max_rows - 1 : reviews.length - 1;
           // make sure the row_count is not greater than available records
