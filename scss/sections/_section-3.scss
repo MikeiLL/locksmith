@@ -20,7 +20,7 @@
 .about__main {
     border: 2px solid $white;
     display:block;
-    margin: 12.5% auto 5% auto;
+    margin: 0 auto 5% auto;
     width: 90%
 }
 
@@ -46,10 +46,7 @@
         width: 45%;
         margin-right: 1rem;
     }
-    .section-3 p:first-of-type {    
-        margin-top: 12.5%;
-    }
-
+    
     .section-3 p {
         width: auto;    
     }

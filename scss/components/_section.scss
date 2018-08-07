@@ -6,15 +6,13 @@
         height: 100%;
         position: relative
     }
-
 }
 
 .section-title {
     font-family: 'Domine', serif;
-    margin: 1rem 0 0;
-	position: absolute;
-	//top: 8.5%;
-	left: 50%;
-	transform: translateX(-50%);
+    margin: 1rem 0;
+	position: relative;
+    text-align: center;
+    width: 100%;
 	white-space: nowrap;
 }
