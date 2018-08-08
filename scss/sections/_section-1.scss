@@ -150,10 +150,6 @@
     a { color: $white; }
 }
 
-.gunsmith-hand-link {
-    border: 0px solid red;
-}
-
 .gunsmith-hand {
     display: none;
     margin-top: 1rem;
@@ -226,8 +222,13 @@
         width: 170px;
     }
 
+    .gunsmith-hand {
+        display: block;
+    }
+
+
     .general-lock-notice, .no-auto {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .no-car-icon {

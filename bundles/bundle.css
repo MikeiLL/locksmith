@@ -168,7 +168,7 @@ p {
   body,
   p {
     font-size: 87.5%;
-    line-height: 1.3;
+    line-height: 1.6;
   }
 }
 
@@ -176,32 +176,32 @@ p {
   body,
   p {
     font-size: 100%;
-    line-height: 1.3;
+    line-height: 1.6;
   }
 }
 
 li {
-  font-size: 1rem;
+  font-size: 1.33333rem;
   line-height: 1.3;
 }
 
 @media all and (min-width: 576px) {
   li {
-    font-size: 1rem;
+    font-size: 1.33333rem;
     line-height: 1.3;
   }
 }
 
 @media all and (min-width: 768px) {
   li {
-    font-size: 1.16667rem;
+    font-size: 1.5rem;
     line-height: 1.3;
   }
 }
 
 @media all and (min-width: 992px) {
   li {
-    font-size: 1.5rem;
+    font-size: 1.66667rem;
     line-height: 1.3;
   }
 }
@@ -576,10 +576,6 @@ h6 {
   color: #ffffef;
 }
 
-.gunsmith-hand-link {
-  border: 0px solid red;
-}
-
 .gunsmith-hand {
   display: none;
   margin-top: 1rem;
@@ -645,8 +641,11 @@ h6 {
   .key-icon {
     width: 170px;
   }
+  .gunsmith-hand {
+    display: block;
+  }
   .general-lock-notice, .no-auto {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .no-car-icon {
     width: 70px;
@@ -688,7 +687,6 @@ h6 {
 .services__list {
   list-style-image: url("../images/checkmark.svg");
   position: relative;
-  top: 17.5%;
   margin: 0 auto;
   padding-left: 0;
   text-align: center;
@@ -775,13 +773,12 @@ h6 {
   color: #ffffef;
 }
 
-.section-4 h2.animated-item + a {
-  border: 0px solid red;
+.add-review-link {
   color: #ff7f00;
   display: block;
   margin: 0 auto 1rem auto;
   position: relative;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -850,32 +847,28 @@ h6 {
 
 .review-stars ul {
   list-style-type: none;
-  text-align: right;
+  margin-top: 0;
+  width: 100%;
 }
 
 .review-stars ul li {
   display: inline-block;
+  float: right;
   margin-left: 6px;
 }
 
-p.review-text {
+.review-stars ul li i {
+  font-size: 18px !important;
+}
+
+.review-text {
   color: #ffffef;
   font-size: 1.2rem;
   line-height: 1.6;
+  margin-top: 1rem;
   width: 100%;
 }
 
-/*
-.star:before {
-  content: "\f005";
-
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
 .star {
   color: #FCC204;
 }
@@ -938,6 +931,9 @@ p.review-text {
   .review-item {
     margin: 0 10px;
     width: 33.33%;
+  }
+  .review-text {
+    margin-top: 0;
   }
 }
 

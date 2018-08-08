@@ -11,13 +11,13 @@
 .customer__title {
     color: $white;
 }
-.section-4 h2.animated-item + a {
-        border: 0px solid red;
+
+.add-review-link {
         color: $notice;
         display: block;
         margin: 0 auto 1rem auto;
         position: relative;
-        font-size: 1.15rem;
+        font-size: 1.25rem;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
@@ -29,9 +29,7 @@
     position: relative;
     overflow: hidden;
     padding-top: 1rem;
-    //padding-top: 2.5rem;
-    //top: 10%;
-    //top: 17.5%;
+    
 }
 
 /*img*/.google_review_user {
@@ -57,7 +55,6 @@
     }
 
     .review-meta {
-        //border: 1px solid red;
         display: flex;
         flex-flow: column;
         margin-left: auto;
@@ -78,32 +75,27 @@
 
 .review-stars ul {
     list-style-type: none;
-    text-align: right;
+    margin-top: 0;
+    width: 100%;
 }
 
 .review-stars ul li {
     display: inline-block;
+    float: right;
     margin-left: 6px;
 }
 
-p.review-text {
+.review-stars ul li i {
+    font-size: 18px !important;
+}
+
+.review-text {
     color: $white;
     font-size: 1.2rem;
     line-height: 1.6;
+    margin-top: 1rem;
     width: 100%;
 }
-
-/*
-.star:before {
-  content: "\f005";
-
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
 
 .star {
     color: $highlight;
@@ -165,6 +157,9 @@ p.review-text {
     .review-item {
         margin: 0 10px;
         width: 33.33%;
+    }
+    .review-text {
+        margin-top: 0;
     }
 }
 
