@@ -172,6 +172,7 @@
           for (var i = row_count; i >= 0; i--) {
             var stars = renderStars(reviews[i].rating);
             var date = convertTime(reviews[i].time);
+            reviews[i].text = (reviews[i].text.length > 250 ? reviews[i].text.substr(0, 250) + "&hellip;" : reviews[i].text);
             html = html+"<div class='review-item'><div class='review-meta'><span class='review-author'>"+reviews[i].author_name+"</span><span class='review-sep'>, </span><span class='review-date'>"+date+"</span></div>";
             html+="<img src=\""+reviews[i].profile_photo_url+"\" class=\"google_review_user\"/>"+stars+"<p class='review-text'>"+reviews[i].text+"</p></div>"
           };

@@ -20,10 +20,37 @@ var uglify = require('gulp-uglify');
  ============================================ For Development ==================================================
  =============================================================================================================*/
 
+
+
+// compile node_modules and save the result as bundles/modules.css
+gulp.task('compile-modules', function () {
+    return gulp.src([
+    		'node_modules/normalize.css/normalize.css',
+    		'node_modules/font-awesome/css/font-awesome.css',
+    		'node_modules/fullpage.js/jquery.fullPage.css',
+			'node_modules/google-places-data/google-places.css',
+			'node_modules/modularscale-sass/stylesheets/modularscale',
+			'node_modules/typi/scss/typi'
+    	])
+        .pipe(sass({
+            outputStyle: 'expanded'
+        }))
+        .on('error', errorAlert)
+        .pipe(autoprefixer())
+        .pipe(rename('modules.scss'))
+        .pipe(gulp.dest('scss'))
+        .pipe(browserSync.stream());
+});
+
 // compile sass and save the result as bundles/bundle.css
 gulp.task('compile-sass', function () {
     return gulp.src('scss/main.scss')
         .pipe(sass({
+        	includePaths: [
+				'node_modules/font-awesome/scss',
+				'node_modules/modularscale-sass/stylesheets',
+				'node_modules/typi/scss'
+			],
             outputStyle: 'expanded'
         }))
         .on('error', errorAlert)
@@ -44,7 +71,6 @@ gulp.task('bundle-js', function () {
             'javascripts/animations/section-4.js',
             'javascripts/google-places.js',
             'javascripts/reviews.js'
-            //'node_modules/google-places-data/google-places.js',
         ],
         debug: true
     })
