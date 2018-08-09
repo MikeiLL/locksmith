@@ -437,7 +437,7 @@ $(document).ready(function () {
 
 function hideAnimatedItems() {
     $('.animated-item').css({
-        opacity: 0
+        opacity: 1
     });
 }
 },{"./animations/section-1":1,"./animations/section-2":2,"./animations/section-3":3,"./animations/section-4":4,"./animations/section-5":5,"fullpage.js":9,"jquery":10}],8:[function(require,module,exports){
