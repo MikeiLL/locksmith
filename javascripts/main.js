@@ -52,6 +52,6 @@ $(document).ready(function () {
 
 function hideAnimatedItems() {
     $('.animated-item').css({
-        opacity: 1
+        opacity: 0
     });
 }
