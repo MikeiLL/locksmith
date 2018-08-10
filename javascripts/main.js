@@ -51,11 +51,6 @@ $(document).ready(function () {
     $('#about_us').on('click', function () {
         $.fn.fullpage.moveSectionDown();
     });
-    // move to next section when btn-next is clicked.
-    $('#gunsmith_site').on('click', function () {
-        window.location.href='https://www.gunsmithongarden.com';
-        return false;
-    });
 
 });
 
