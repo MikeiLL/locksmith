@@ -47,6 +47,10 @@ $(document).ready(function () {
     $('#btn-next').on('click', function () {
         $.fn.fullpage.moveSectionDown();
     });
+    // move to next section when btn-next is clicked.
+    $('#about_us').on('click', function () {
+        $.fn.fullpage.moveSectionDown();
+    });
 
 });
 

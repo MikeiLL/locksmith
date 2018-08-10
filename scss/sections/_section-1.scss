@@ -184,7 +184,9 @@
         font-size: 2vw;
     }
 }
-
+#about_us:hover {
+	cursor: pointer;
+}
 @media (min-width: 768px) {
     .section-1-top {
         height:60vh;
