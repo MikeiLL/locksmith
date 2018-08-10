@@ -10,6 +10,12 @@
     padding-left: 1.5%;
     padding-right: 1.5%;
     //overflow: visible !important;
+    a {
+    	color: darken($primary-bg, 15%);
+    }
+    a:hover {
+    	color: lighten($primary-bg, 35%);
+    }
 }
 
 .container {
