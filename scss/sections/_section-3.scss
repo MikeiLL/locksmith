@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.fp-viewing-section-3 .header {
+    border-bottom: 1px solid rgba(255,255,239, 0.5);
+}
+
 .section-3 {
     background-color: $drkBrown;
     color: $white;
@@ -12,6 +16,11 @@
     padding-top: .001em;    
 }
 
+.about-us__wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
 .about__title {
     color: $white;
     top: 0%;
@@ -20,13 +29,16 @@
 .about__main {
     border: 2px solid $white;
     display:block;
-    margin: 0 auto 5% auto;
-    width: 90%
+    //margin: 0 auto 5% auto;
+    //width: 90%
+    margin:0 5px 5px 0;
+    float: left;
+    width: 50%;
 }
 
 .section-3 p {
     margin: 0 auto 20px auto;
-    width: 90%;
+    
 }
 
 @media (min-width: 414px) and (orientation: portrait) {
