@@ -111,16 +111,11 @@
     text-align: center;
     width: 95%;
     color: $white;
-    a {
-        color: $white;
-        display: block;
+    transition: all .5s ease-out;
         &:hover {
             @include hover-scale;
         }
     }
-
-    
-}
 
 /* NO AUTO */
 

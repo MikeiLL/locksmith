@@ -41,5 +41,6 @@
 
 @mixin hover-scale {
   color: $notice;
+  transform-origin: center;
   transform: scale(1.1);
 }
