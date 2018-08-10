@@ -17,8 +17,10 @@
 }
 
 .about-us__wrapper {
-    margin: 0 auto;
-    width: 80%;
+   /* margin: 0 auto;
+    width: 80%; */
+    margin: 0 0 0 27px;
+    width: 92%;
 }
 
 .about__title {
@@ -37,13 +39,31 @@
 }
 
 .section-3 p {
-    margin: 0 auto 20px auto;
-    
+    margin: 0 auto 12px auto;
 }
 
-@media (min-width: 414px) and (orientation: portrait) {
+@media (min-width: 375px) and (orientation: portrait) { /* iPHONE 7 */
+    .about-us__wrapper {
+        margin: 0 0 0 27px;
+        width: 90%;
+    }
+    .section-3 p {
+        font-size: 97.5%;
+    }
+}
+
+@media (min-width: 414px) and (orientation: portrait) { /* iPhone 7 Plus */
+    .about-us__wrapper {
+       /* margin: 0 auto;
+        width: 80%; */
+    }    
+
     .about__main {
-        width: 80%;
+        width: 50%;
+    }
+
+    .section-3 p {
+        font-size: 110%; /* of typi base */
     }
 }
 
@@ -52,6 +72,19 @@
         width: 70%;
     }   
 }
+
+@media (min-width: 600px) {
+    .about__main {
+        width: 80%;
+        float: none;
+        margin: 0 auto 20px auto;
+    }
+     .section-3 p {
+        font-size: 130%; /* of typi base */
+        margin: 0 0 20px 0;
+    }
+}
+
 @media (min-width: 768px) {
     .about__main {
         float: left;
@@ -59,12 +92,18 @@
         margin-right: 1rem;
     }
     
-    .section-3 p {
-        width: auto;    
+    .about-us__wrapper {
+       margin: 0 auto;
+        width: 90%;
     }
-
-
-
+    
+    .section-3 p {
+        font-size: 100%;    
+    }
 }
 
-
+@media (min-width: 992) {
+    .about-us__wrapper {
+        width: 95%;
+    }
+}

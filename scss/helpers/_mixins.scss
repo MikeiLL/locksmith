@@ -38,3 +38,8 @@
 @mixin first-element-after-sec-title {
   margin-top: 22.5%;
 }
+
+@mixin hover-scale {
+  color: $notice;
+  transform: scale(1.1);
+}
