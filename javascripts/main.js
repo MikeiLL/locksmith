@@ -36,8 +36,12 @@ $(document).ready(function () {
                     executeAnimationOfSection4();
                     break;
                 case 5:
-                    $('#btn-next').hide();          // hide btn-next when reaching the last section.
+                    $('#btn-next').show();          // hide btn-next when reaching the last section.
                     executeAnimationOfSection5();
+                    break;
+                case 6:
+                    $('#btn-next').hide();          // hide btn-next when reaching the last section.
+                    executeAnimationOfSection6();
                     break;
             }
         }
