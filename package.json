@@ -18,7 +18,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
     "gulp-sourcemaps": "^2.0.0-alpha",
-    "gulp-uglify": "^1.5.3",
+    "gulp-uglify": "^1.5.4",
     "modularscale-sass": "^3.0.5",
     "run-sequence": "^1.1.5",
     "typi": "^3.2.0",
