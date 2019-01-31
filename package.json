@@ -4,7 +4,7 @@
   "description": "A full-page scrolling website boilerplate built using fullPage.js and Velocity.js.",
   "author": "Chris Pan",
   "devDependencies": {
-    "browser-sync": "^2.24.6",
+    "browser-sync": "^2.26.3",
     "browserify": "^13.0.0",
     "browserify-shim": "^3.8.12",
     "del": "^2.2.0",
