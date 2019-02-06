@@ -9,6 +9,10 @@
     white-space: normal;
 }
 
+h2.services__title {
+	@extend h3;
+}
+
 .services__list {
     list-style-image: url('../images/checkmark.svg');
     list-style-position: inside;
